@@ -6,11 +6,10 @@ url: https://github.com/centopk/ha-license-plate-recognition
 arch:
   - amd64
   - aarch64
-  - armv7
 init: false
 startup: services
 boot: auto
-watchdog: true
+watchdog: http://[HOST]:[PORT:8080]/health
 image: ghcr.io/centopk/ha-license-plate-recognition-{arch}
 homeassistant_api: true
 hassio_api: true
