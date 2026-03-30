@@ -15,7 +15,8 @@ RUN apk add --no-cache \
     py3-pip \
     cmake \
     make \
-    g++
+    g++ \
+    nasm
 
 # Установка Python зависимостей
 RUN pip3 install --no-cache-dir --break-system-packages \
