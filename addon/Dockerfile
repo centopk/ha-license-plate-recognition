@@ -8,10 +8,10 @@ RUN apk add --no-cache \
     tesseract-ocr \
     tesseract-ocr-data-rus \
     tesseract-ocr-data-eng \
-    libjpeg \
+    libjpeg-turbo \
     libwebp \
     libpng \
-    libtiff \
+    tiff \
     openblas \
     libgomp
 
