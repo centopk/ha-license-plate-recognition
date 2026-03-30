@@ -21,12 +21,12 @@ RUN apk add --no-cache \
 RUN pip3 install --no-cache-dir --break-system-packages \
     torch --extra-index-url https://download.pytorch.org/whl/cpu \
     easyocr \
-    opencv-python-headless \
     numpy \
     Pillow \
     aiohttp \
     websockets \
-    pyyaml
+    pyyaml \
+    opencv-python-headless==4.10.0.84
 
 # Копирование скриптов
 COPY *.py /app/
