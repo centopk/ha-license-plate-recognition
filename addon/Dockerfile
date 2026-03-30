@@ -13,7 +13,8 @@ RUN apk add --no-cache \
     libpng \
     tiff \
     openblas \
-    libgomp
+    libgomp \
+    py3-pip
 
 # Установка Python зависимостей
 RUN pip3 install --no-cache-dir \
