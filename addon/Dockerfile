@@ -26,7 +26,7 @@ RUN pip3 install --no-cache-dir --break-system-packages \
     aiohttp \
     websockets \
     pyyaml \
-    opencv-python-headless==4.10.0.84
+    opencv-python-headless==4.11.0.86
 
 # Копирование скриптов
 COPY *.py /app/
