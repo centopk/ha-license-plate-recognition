@@ -17,7 +17,7 @@ RUN apk add --no-cache \
     python3
 
 # Установка Python зависимостей
-RUN pip3 install --no-cache-dir \
+RUN pip3 install --no-cache-dir --break-system-packages \
     easyocr \
     opencv-python-headless \
     numpy \
