@@ -12,7 +12,10 @@ RUN apk add --no-cache \
     libpng \
     tiff \
     libgomp \
-    py3-pip
+    py3-pip \
+    cmake \
+    make \
+    g++
 
 # Установка Python зависимостей
 RUN pip3 install --no-cache-dir --break-system-packages \
