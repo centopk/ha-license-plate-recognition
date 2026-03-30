@@ -1,0 +1,48 @@
+name: "License Plate Recognition"
+version: "1.0.0"
+slug: "license_plate_recognition"
+description: "Распознавание автомобильных номеров с камер Reolink через EasyOCR"
+url: "https://github.com/user/ha-license-plate-recognition"
+arch:
+  - amd64
+  - aarch64
+  - armv7
+init: false
+startup: services
+boot: auto
+watchdog: true
+image: "license-plate-recognition"
+panel_admin: false
+homeassistant_api: true
+hassio_api: true
+hassio_role: homeassistant
+
+ports:
+  8080/tcp: null
+
+ports_description:
+  8080/tcp: "Webhook порт для триггера распознавания"
+
+options:
+  rtsp_url: "rtsp://192.168.1.100:554/stream1"
+  ha_url: "http://homeassistant.local:8123"
+  ha_token: ""
+  save_images: true
+  confidence: 0.7
+  region: "69"
+  camera_name: "Reolink Camera"
+
+schema:
+  rtsp_url: str
+  ha_url: str
+  ha_token: str
+  save_images: bool
+  confidence: float(0.5,0.9)
+  region: str?
+  camera_name: str?
+
+map:
+  - media:rw
+
+stages:
+  - stable
