@@ -20,12 +20,8 @@
 
 ## Установка через GitHub (рекомендуется)
 
-### Шаг 1: Создайте репозиторий на GitHub
 
-1. Создайте новый публичный репозиторий на GitHub (например, `ha-license-plate-recognition`)
-2. Загрузите все файлы из этой папки в репозиторий
-
-### Шаг 2: Добавьте репозиторий в Home Assistant
+### Шаг 1: Добавьте репозиторий в Home Assistant
 
 1. В Home Assistant перейдите в **Supervisor** → **Add-on Store**
 
@@ -33,12 +29,12 @@
 
 3. Вставьте URL вашего репозитория:
    ```
-   https://github.com/YOUR_USERNAME/ha-license-plate-recognition
+   https://github.com/centopk/ha-license-plate-recognition
    ```
 
 4. Нажмите **Add**
 
-### Шаг 3: Установите аддон
+### Шаг 2: Установите аддон
 
 1. В Add-on Store появится новый аддон "License Plate Recognition"
 
