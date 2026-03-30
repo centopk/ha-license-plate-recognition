@@ -16,7 +16,7 @@ RUN apk add --no-cache \
 
 # Установка Python зависимостей
 RUN pip3 install --no-cache-dir --break-system-packages \
-    torch --index-url https://download.pytorch.org/whl/cpu \
+    torch --extra-index-url https://download.pytorch.org/whl/cpu \
     easyocr \
     opencv-python-headless \
     numpy \
